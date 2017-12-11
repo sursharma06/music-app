@@ -1,0 +1,13 @@
+body {
+  background-color: #03256C
+}
+
+
+.list-group-item {
+  cursor: pointer;
+
+}
+
+.list-group-item:hover {
+  background-color: #eee;
+}

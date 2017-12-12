@@ -11,12 +11,14 @@ const SongDetail = ({ song }) => {
   });
 
   return (
-    <div className="song-detail col-sm-8 col-sm-offset-2">
+    <div className="song-detail col-sm-8 col-sm-offset-3">
       <div className="embed-responsive-item col-sm-8">
-        <audio controls><source src={url} type="audio/mp3"/></audio>
+      <br/>
+        <audio controls=''><source src={url} type="audio/mp3"/></audio>
       </div>
+      <br/>
       <div className="details">
-        <div>{song.title}</div>
+        <div>Now playing: {song.title}</div>
       </div>
     </div>
   );

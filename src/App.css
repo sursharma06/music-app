@@ -1,5 +1,8 @@
+
 body {
-  background-color: #03256C
+  background-color: #03256C;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 16px;
 }
 
 
@@ -10,4 +13,8 @@ body {
 
 .list-group-item:hover {
   background-color: #eee;
+}
+
+.details {
+  color: #fff;
 }

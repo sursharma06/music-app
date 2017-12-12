@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SearchBar from './components/Search_Bar';
 import SongList from './components/Song_list';
 import SongDetail from './components/Song_detail';
+// import Users from './Users';
 import './App.css';
 
 var SC = require('soundcloud');
@@ -19,6 +20,7 @@ class App extends Component{
       songs: [],
       selectedSong: null,
     };
+    this.songSearch('top 50');
   }
 
   songSearch = (term) => {
@@ -29,7 +31,7 @@ class App extends Component{
           this.setState({
             isLoaded: true,
             songs: result,
-            selectedSong: result[0],
+            selectedSong: result,
           });
         },
         // Note: it's important to handle errors here
